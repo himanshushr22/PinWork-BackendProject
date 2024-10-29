@@ -1,0 +1,23 @@
+<% include ./partials/header.ejs %>
+
+<div class="w-full h-screen shadow-md  bg-cover bg-center flex items-center justify-center">
+  <div class="w-[350px] shadow-2xl border-2 h-[67vh] bg-white rounded-[30px] px-10 py-8">
+  <h1 class="text-2xl font-semibold text-zinc-700 tracking-tighter capitalize leading-none text-center mb-3">Create New Account</h1>
+  <form action="/register" method="post">
+
+  
+  <input class="block border-2 rounded-md outline-none w-full mb-1 px-3 py-2" type="text" placeholder="Username" name="username">
+  <input class="block border-2 rounded-md outline-none w-full mb-1 px-3 py-2" type="text" placeholder="Full Name" name="fullname">
+  <input class="block border-2 rounded-md outline-none w-full mb-1 px-3 py-2" type="email" placeholder="Email" name="email">
+  <input class="block border-2 rounded-md outline-none w-full mb-1 px-3 py-2" type="number" placeholder="Phone" name="contact">
+  <input class="block border-2 rounded-md outline-none w-full mb-2 px-3 py-2" type="password" placeholder="Password" name="password">
+  <a class="inline-block mt-1 font-semibold text-zinc-500 text-[12px]" href="/term">Term's and Condition</a>
+  <input class="block w-full mt-1 px-3 py-2 bg-red-600 text-white rounded-full cursor-pointer" type="submit" value="Register">
+  <p class="text-xs font-semibold text-zinc-700 mt-3 text-center w-2/3 mx-auto">Register Yourself Now in PinWork </p>
+
+  </form>
+  <a class="inline-block mt-2 text-[12px] font-semibold text-zinc-700 text-center w-full" href="/">Login ?</a>
+  </div>
+   </div>
+
+<% include ./partials/footer.ejs %>
